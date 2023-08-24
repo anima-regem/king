@@ -28,6 +28,23 @@
 		</div>
 	</article>
 	<footer>
+		<div id="qrcode-container"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){img="",name="",data=`BEGIN:VCARD
+        VERSION:3.0
+        N:Ramees;Ramees;;
+        FN:Ramees
+        EMAIL;TYPE=WORK:ramees@acuteangle.io   
+        ORG:acute endeavor pvt ltd
+        TITLE:the cto
+        
+        ;TEL;TYPE=CELL:+917012486527
+        URL:https://mern.gohighr.io
+        X-SOCIALPROFILE;TYPE=whatsapp:+919656343690
+        X-SOCIALPROFILE;TYPE=Twitter:
+        X-SOCIALPROFILE;TYPE=LinkedIn:https://www.linkedin.com/company/acute-endeavors-pvt-ltd/
+        END:VCARD`;let e=document.getElementById("qrcode-container"),t=document.createElement("link");t.rel="stylesheet",t.href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap",document.head.appendChild(t),e.style.display="flex",e.style.flexDirection="column",e.style.alignItems="center",e.style.justifyContent="center";let n=document.createElement("img");n.src=img,n.style.marginBottom="12px",n.alt="QR Code",n.style.width="180px",n.style.height="180px",e.appendChild(n),e.classList.contains("hide-image")&&(n.style.display="none");let l=document.createElement("button");l.textContent="Save Contact",l.style.fontFamily="Poppins",l.style.fontWeight="600",l.style.fontSize="16px",l.style.width="max-content",l.style.borderRadius="157px",l.style.border="none",l.style.display="flex",l.style.justifyContent="center",l.style.alignItems="center",l.style.backgroundColor="#2E2E2E",l.style.color="rgb(190, 255, 108)",l.style.padding="10px 22px 10px 22px",l.style.height="45px",e.appendChild(l),l.addEventListener("click",function(){o()});let o=()=>{let e=new Blob([data],{type:"text/vcard"}),t=URL.createObjectURL(e),n=document.createElement("a");n.href=t,n.download=`Ramees.vcf`,document.body.appendChild(n),n.click(),document.body.removeChild(n),URL.revokeObjectURL(t)}});
+    </script>
 		All credit goes to me!!
 	</footer>
 </body>
